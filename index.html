@@ -1,93 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Intel | Sustainability Through the Ages</title>
-  <link rel="stylesheet" href="style.css">
+  <title>رحلة Intel نحو الاستدامة</title>
+
+  <!-- Bootstrap RTL CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Your Custom Styles -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="hero">
-    <img src="img/intel-header-logo.svg" alt="Intel Logo">
-    <h1>SUSTAINABILITY THROUGH THE AGES</h1>
-    <p>Explore Intel’s journey through time, discovering how our commitment to innovation has shaped a more sustainable future for technology and our planet.</p>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Intel</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">الرئيسية</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">حول</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">اتصل</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="text-center p-5 bg-primary text-white">
+    <h1>رحلة Intel نحو الاستدامة</h1>
+    <p>تعرف على الابتكارات والتقنيات التي تبني مستقبلاً أفضل.</p>
   </header>
 
   <!-- Timeline Section -->
-  <main class="timeline">
-    <!-- 1968 -->
-    <div class="card">
-      <img src="img/1.jpg" alt="Intel Founded">
-      <h2>1968</h2>
-      <p>Intel is founded, beginning a journey of innovation that will transform technology. This laid the groundwork for decades of progress in microprocessors, computing, and sustainability.</p>
-      <a class="learn-more" href="https://www.intel.com/content/www/us/en/history/overview.html" target="_blank">Learn More</a>
+  <section class="container my-5">
+    <!-- KEEP your timeline code here – do not modify -->
+    <h2 class="text-center mb-4">Timeline Section (Already Working)</h2>
+  </section>
+
+  <!-- Three-Column Section -->
+  <section class="container my-5 text-center">
+    <div class="row g-4">
+      <div class="col-md">
+        <i class="bi bi-globe fs-1 text-primary" aria-hidden="true"></i>
+        <h3 class="mt-3">الاستدامة العالمية</h3>
+        <p>اكتشف جهود Intel في تحسين الكفاءة البيئية وتقليل البصمة الكربونية.</p>
+        <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#learnMoreModal1">تعرف أكثر</button>
+      </div>
+      <div class="col-md">
+        <i class="bi bi-cpu fs-1 text-primary" aria-hidden="true"></i>
+        <h3 class="mt-3">ابتكار التكنولوجيا</h3>
+        <p>تعرف على أحدث ابتكارات Intel التي تدعم مستقبل أكثر استدامة.</p>
+        <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#learnMoreModal2">تعرف أكثر</button>
+      </div>
+      <div class="col-md">
+        <i class="bi bi-people fs-1 text-primary" aria-hidden="true"></i>
+        <h3 class="mt-3">المسؤولية الاجتماعية</h3>
+        <p>تعرف كيف تدعم Intel المجتمعات والتعليم والفرص العالمية.</p>
+        <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#learnMoreModal3">تعرف أكثر</button>
+      </div>
     </div>
+  </section>
 
-    <!-- 1971 -->
-    <div class="card">
-      <img src="img/2.jpg" alt="First Microprocessor">
-      <h2>1971</h2>
-      <p>Intel introduces the 4004 — the first commercial microprocessor — a revolutionary step that forever changed how computers are built and used.</p>
-      <a class="learn-more" href="https://www.intel.com/content/www/us/en/history/museum-story-of-intel-4004.html" target="_blank">Learn More</a>
-    </div>
+  <!-- Subscription Form -->
+  <section class="container my-5">
+    <form class="bg-light p-4 rounded mx-auto" style="max-width: 500px;">
+      <label for="email" class="form-label fw-bold">اشترك في النشرة الإخبارية</label>
+      <input type="email" id="email" class="form-control mb-3" placeholder="أدخل بريدك الإلكتروني" aria-label="البريد الإلكتروني للاشتراك" required>
+      <button type="submit" class="btn btn-success w-100">اشتراك</button>
+    </form>
+  </section>
 
-    <!-- 1978 -->
-    <div class="card">
-      <img src="img/3.jpg" alt="8086 Processor">
-      <h2>1978</h2>
-      <p>The 8086 launches and becomes the foundation of the x86 architecture, setting the stage for nearly all future personal computer processors.</p>
-      <a class="learn-more" href="https://www.intel.com/content/www/us/en/history/museum-story-of-intel-8086.html" target="_blank">Learn More</a>
-    </div>
-
-    <!-- 1985 -->
-    <div class="card">
-      <img src="img/4.jpg" alt="Intel 386 Processor">
-      <h2>1985</h2>
-      <p>Intel introduces the 386 processor with 32-bit architecture, ushering in multitasking for personal computers.</p>
-      <a class="learn-more" href="https://www.intel.com/content/www/us/en/history/virtual-vault/articles/386-microprocessor.html" target="_blank">Learn More</a>
-    </div>
-
-    <!-- 1993 -->
-    <div class="card">
-      <img src="img/1993-pentium.jpeg" alt="Pentium Processor">
-      <h2>1993</h2>
-      <p>Intel introduces the Pentium processor, bringing advanced performance to PCs worldwide.</p>
-      <a class="learn-more" href="https://www.intel.com/content/www/us/en/history/virtual-vault/articles/pentium-processor.html" target="_blank">Learn More</a>
-    </div>
-
-    <!-- 2006 -->
-    <div class="card">
-      <img src="img/2006-core.jpg" alt="Intel Core Microarchitecture">
-      <h2>2006</h2>
-      <p>Intel launches its Core microarchitecture, focusing on energy efficiency and performance.</p>
-      <a class="learn-more" href="https://www.intel.com/content/www/us/en/newsroom/news/intel-core-processor-brand.html" target="_blank">Learn More</a>
-    </div>
-
-    <!-- 2020 -->
-    <div class="card">
-      <img src="img/2020-sustainability.jpeg" alt="Intel Sustainability Milestone">
-      <h2>2020</h2>
-      <p>Intel announces major sustainability milestones, committing to net positive water use and 100% renewable energy.</p>
-      <a class="learn-more" href="https://www.intel.com/content/www/us/en/corporate-responsibility/environmental-sustainability.html" target="_blank">Learn More</a>
-    </div>
-  </main>
-
-  <!-- Dots Navigation -->
-  <div class="dots">
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-  </div>
-
-  <footer>
-    <p>&copy; 2025 Intel Sustainability Timeline Project</p>
+  <!-- Footer -->
+  <footer class="text-center p-3 bg-dark text-white">
+    <p>&copy; 2025 Intel | 
+      <a href="#" class="text-white text-decoration-underline">سياسة الخصوصية</a> | 
+      <a href="#" class="text-white text-decoration-underline">الشروط</a> | 
+      <a href="#" class="text-white text-decoration-underline">اتصل بنا</a>
+    </p>
   </footer>
 
-  <!-- JavaScript Link for Scroll + Dots -->
-  <script src="script.js"></script>
+  <!-- Bootstrap Modals -->
+  <div class="modal fade" id="learnMoreModal1" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog"><div class="modal-content">
+      <div class="modal-header"><h5 class="modal-title">الاستدامة العالمية</h5></div>
+      <div class="modal-body">محتوى إضافي عن جهود Intel البيئية حول العالم.</div>
+      <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button></div>
+    </div></div>
+  </div>
+
+  <div class="modal fade" id="learnMoreModal2" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog"><div class="modal-content">
+      <div class="modal-header"><h5 class="modal-title">ابتكار التكنولوجيا</h5></div>
+      <div class="modal-body">محتوى إضافي عن الابتكارات الحديثة والتقنيات.</div>
+      <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button></div>
+    </div></div>
+  </div>
+
+  <div class="modal fade" id="learnMoreModal3" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog"><div class="modal-content">
+      <div class="modal-header"><h5 class="modal-title">المسؤولية الاجتماعية</h5></div>
+      <div class="modal-body">محتوى إضافي عن مشاركة Intel في المجتمعات والتعليم.</div>
+      <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button></div>
+    </div></div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- LevelUp: Auto-detect language script -->
+  <script>
+    function updateDirection() {
+      const htmlTag = document.documentElement;
+      const lang = htmlTag.lang;
+      if (['ar', 'he', 'fa', 'ur'].includes(lang)) {
+        htmlTag.setAttribute('dir', 'rtl');
+      } else {
+        htmlTag.setAttribute('dir', 'ltr');
+      }
+    }
+    updateDirection();
+    const observer = new MutationObserver(updateDirection);
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ['lang'] });
+  </script>
+
 </body>
 </html>

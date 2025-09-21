@@ -5,51 +5,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Intel's journey to sustainability with innovations and milestones that shape the future of technology.">
   <title>Intel | Journey to Sustainability</title>
+
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <a class="skip-link visually-hidden-focusable" href="#main" aria-label="Skip to main content">Skip to main content</a>
+
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary" role="navigation" aria-label="Main navigation">
     <div class="container">
-      <a class="navbar-brand" href="#">Intel</a>
-      <button class="btn btn-light btn-sm ms-auto" onclick="toggleLanguage()" id="langToggle">
+      <a class="navbar-brand" href="#" aria-label="Intel homepage">Intel</a>
+      <button class="btn btn-light btn-sm ms-auto" onclick="toggleLanguage()" id="langToggle" aria-label="Switch site language to Arabic" aria-pressed="false">
         Switch to Arabic
       </button>
     </div>
   </nav>
 
   <!-- Hero Section -->
-  <header class="text-center p-5 bg-primary text-white">
+  <header class="text-center p-5 bg-primary text-white" role="banner">
     <h1 id="pageTitle">Intel’s Journey to Sustainability</h1>
     <p id="pageSubtitle">Learn about the innovations and technologies that are building a better future.</p>
   </header>
 
   <!-- Info Cards Section -->
-  <main class="container text-center my-4">
+  <main id="main" class="container text-center my-4" role="main" tabindex="-1">
     <h2 class="mb-4" id="sectionTitle">Explore Intel’s Focus Areas</h2>
     <div class="row g-4">
       <div class="col-md-4">
-        <h3 id="card1Title">Social Responsibility</h3>
-        <p id="card1Text">Learn how Intel supports communities and education.</p>
-        <a href="https://www.intel.com/content/www/us/en/corporate-responsibility/social-impact.html" 
-           class="btn btn-outline-primary" target="_blank" aria-label="Learn more about Intel Social Responsibility">
+        <h3 id="card3Title">Global Sustainability</h3>
+        <p id="card3Text">Discover Intel’s efforts to improve environmental efficiency.</p>
+        <a href="https://www.intel.com/content/www/us/en/corporate-responsibility/environmental-sustainability.html"
+           class="btn btn-outline-primary" target="_blank" rel="noopener noreferrer" aria-label="Learn more about Intel Global Sustainability">
            Learn More
         </a>
       </div>
       <div class="col-md-4">
         <h3 id="card2Title">Technology Innovation</h3>
         <p id="card2Text">Learn about Intel’s latest innovations that support a more sustainable future.</p>
-        <a href="https://www.intel.com/content/www/us/en/research/overview.html" 
-           class="btn btn-outline-primary" target="_blank" aria-label="Learn more about Intel Technology Innovation">
+        <a href="https://www.intel.com/content/www/us/en/research/overview.html"
+           class="btn btn-outline-primary" target="_blank" rel="noopener noreferrer" aria-label="Learn more about Intel Technology Innovation">
            Learn More
         </a>
       </div>
       <div class="col-md-4">
-        <h3 id="card3Title">Global Sustainability</h3>
-        <p id="card3Text">Discover Intel’s efforts to improve environmental efficiency.</p>
-        <a href="https://www.intel.com/content/www/us/en/corporate-responsibility/environmental-sustainability.html" 
-           class="btn btn-outline-primary" target="_blank" aria-label="Learn more about Intel Global Sustainability">
+        <h3 id="card1Title">Social Responsibility</h3>
+        <p id="card1Text">Learn how Intel supports communities and education.</p>
+        <a href="https://www.intel.com/content/www/us/en/corporate-responsibility/social-impact.html"
+           class="btn btn-outline-primary" target="_blank" rel="noopener noreferrer" aria-label="Learn more about Intel Social Responsibility">
            Learn More
         </a>
       </div>
@@ -57,105 +61,132 @@
   </main>
 
   <!-- Timeline Section -->
-  <section class="container my-5">
+  <section class="container my-5" aria-labelledby="timelineTitle">
     <h2 class="text-center mb-4" id="timelineTitle">Timeline</h2>
-    <div class="timeline d-flex flex-row flex-nowrap overflow-auto">
-      <div class="card">
+    <ul class="timeline d-flex flex-row flex-nowrap overflow-auto list-unstyled" role="list" aria-label="Intel timeline of milestones">
+      <li role="listitem" class="card">
         <img src="img/1.jpg" alt="Intel founded in 1968" loading="lazy">
         <div class="card-body">
-          <h3>1968</h3>
+          <h3 id="year-1968">1968</h3>
           <p>Intel is founded, beginning a journey of innovation that transforms technology.</p>
-          <a href="https://www.intel.com/content/www/us/en/history/overview.html" 
-             class="btn btn-primary btn-sm" target="_blank">Learn More</a>
+          <a href="https://www.intel.com/content/www/us/en/history/overview.html"
+             class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer" aria-labelledby="year-1968">Learn More</a>
         </div>
-      </div>
-
-      <div class="card">
+      </li>
+      <li role="listitem" class="card">
         <img src="img/2.jpg" alt="Intel 4004 microprocessor" loading="lazy">
         <div class="card-body">
-          <h3>1971</h3>
+          <h3 id="year-1971">1971</h3>
           <p>Intel introduces the 4004 — the first commercial microprocessor.</p>
-          <a href="https://www.intel.com/content/www/us/en/history/museum-story-of-intel-4004.html" 
-             class="btn btn-primary btn-sm" target="_blank">Learn More</a>
+          <a href="https://www.intel.com/content/www/us/en/history/museum-story-of-intel-4004.html"
+             class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer" aria-labelledby="year-1971">Learn More</a>
         </div>
-      </div>
-
-      <div class="card">
+      </li>
+      <li role="listitem" class="card">
         <img src="img/3.jpg" alt="Intel 8086 processor" loading="lazy">
         <div class="card-body">
-          <h3>1978</h3>
+          <h3 id="year-1978">1978</h3>
           <p>The 8086 launches and becomes the foundation of the x86 architecture.</p>
-          <a href="https://www.intel.com/content/www/us/en/history/museum-story-of-intel-8086.html" 
-             class="btn btn-primary btn-sm" target="_blank">Learn More</a>
+          <a href="https://www.intel.com/content/www/us/en/history/museum-story-of-intel-8086.html"
+             class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer" aria-labelledby="year-1978">Learn More</a>
         </div>
-      </div>
-
-      <div class="card">
+      </li>
+      <li role="listitem" class="card">
         <img src="img/4.jpg" alt="Intel 386 processor" loading="lazy">
         <div class="card-body">
-          <h3>1985</h3>
+          <h3 id="year-1985">1985</h3>
           <p>Intel introduces the 386, bringing 32-bit architecture to mainstream PCs.</p>
-          <a href="https://www.intel.com/content/www/us/en/history/virtual-vault/articles/386-microprocessor.html" 
-             class="btn btn-primary btn-sm" target="_blank">Learn More</a>
+          <a href="https://www.intel.com/content/www/us/en/history/virtual-vault/articles/386-microprocessor.html"
+             class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer" aria-labelledby="year-1985">Learn More</a>
         </div>
-      </div>
-
-      <div class="card">
+      </li>
+      <li role="listitem" class="card">
         <img src="img/1993-pentium.jpeg" alt="Pentium processor launch" loading="lazy">
         <div class="card-body">
-          <h3>1993</h3>
+          <h3 id="year-1993">1993</h3>
           <p>Pentium arrives, delivering a big leap in performance for PCs worldwide.</p>
-          <a href="https://www.intel.com/content/www/us/en/history/virtual-vault/articles/pentium-processor.html" 
-             class="btn btn-primary btn-sm" target="_blank">Learn More</a>
+          <a href="https://www.intel.com/content/www/us/en/history/virtual-vault/articles/pentium-processor.html"
+             class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer" aria-labelledby="year-1993">Learn More</a>
         </div>
-      </div>
-
-      <div class="card">
+      </li>
+      <li role="listitem" class="card">
         <img src="img/2006-core.jpg" alt="Intel Core microarchitecture" loading="lazy">
         <div class="card-body">
-          <h3>2006</h3>
+          <h3 id="year-2006">2006</h3>
           <p>Intel launches its Core microarchitecture, focusing on energy efficiency.</p>
-          <a href="https://www.intel.com/content/www/us/en/newsroom/news/intel-core-processor-brand.html" 
-             class="btn btn-primary btn-sm" target="_blank">Learn More</a>
+          <a href="https://www.intel.com/content/www/us/en/newsroom/news/intel-core-processor-brand.html"
+             class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer" aria-labelledby="year-2006">Learn More</a>
         </div>
-      </div>
-
-      <div class="card">
+      </li>
+      <li role="listitem" class="card">
         <img src="img/2020-sustainability.jpeg" alt="Intel sustainability milestone 2020" loading="lazy">
         <div class="card-body">
-          <h3>2020</h3>
+          <h3 id="year-2020">2020</h3>
           <p>Intel announces major sustainability milestones, committing to net positive water use and 100% renewable energy.</p>
-          <a href="https://www.intel.com/content/www/us/en/corporate-responsibility/environmental-sustainability.html" 
-             class="btn btn-primary btn-sm" target="_blank">Learn More</a>
+          <a href="https://www.intel.com/content/www/us/en/corporate-responsibility/environmental-sustainability.html"
+             class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer" aria-labelledby="year-2020">Learn More</a>
         </div>
-      </div>
-    </div>
+      </li>
+    </ul>
   </section>
 
   <!-- Footer -->
-  <footer class="text-center py-3 bg-light mt-4">
-    <p>&copy; 2025 Intel Sustainability Project | <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+  <footer class="text-center py-3 bg-light mt-4" role="contentinfo">
+    <p>&copy; 2025 Intel Sustainability Project |
+      <a href="#" aria-label="Privacy Policy">Privacy Policy</a> |
+      <a href="#" aria-label="Terms of Use">Terms of Use</a>
+    </p>
   </footer>
 
+  <!-- JavaScript -->
   <script>
+    /* Language Toggle JS */
     function toggleLanguage() {
       const htmlTag = document.documentElement;
       const langToggle = document.getElementById("langToggle");
-      if (htmlTag.lang === "en") {
-        htmlTag.lang = "ar";
-        htmlTag.dir = "rtl";
-        langToggle.textContent = "Switch to English";
-        document.getElementById("pageTitle").textContent = "رحلة Intel نحو الاستدامة";
-        document.getElementById("pageSubtitle").textContent = "تعرف على الابتكارات والتقنيات التي تبني مستقبلاً أفضل.";
-        document.getElementById("sectionTitle").textContent = "استكشف مجالات تركيز Intel";
-      } else {
-        htmlTag.lang = "en";
-        htmlTag.dir = "ltr";
-        langToggle.textContent = "Switch to Arabic";
-        document.getElementById("pageTitle").textContent = "Intel’s Journey to Sustainability";
-        document.getElementById("pageSubtitle").textContent = "Learn about the innovations and technologies that are building a better future.";
-        document.getElementById("sectionTitle").textContent = "Explore Intel’s Focus Areas";
-      }
+      const isEnglish = htmlTag.lang === "en";
+      htmlTag.lang = isEnglish ? "ar" : "en";
+      htmlTag.dir = isEnglish ? "rtl" : "ltr";
+
+      langToggle.textContent = isEnglish ? "Switch to English" : "Switch to Arabic";
+      langToggle.setAttribute('aria-label', isEnglish ? 'Switch site language to English' : 'Switch site language to Arabic');
+      langToggle.setAttribute('aria-pressed', isEnglish ? 'true' : 'false');
+
+      document.getElementById("pageTitle").textContent = isEnglish
+        ? "رحلة Intel نحو الاستدامة"
+        : "Intel’s Journey to Sustainability";
+      document.getElementById("pageSubtitle").textContent = isEnglish
+        ? "تعرف على الابتكارات والتقنيات التي تبني مستقبلاً أفضل."
+        : "Learn about the innovations and technologies that are building a better future.";
+      document.getElementById("sectionTitle").textContent = isEnglish
+        ? "استكشف مجالات تركيز Intel"
+        : "Explore Intel’s Focus Areas";
+
+      document.getElementById("card1Title").textContent = isEnglish ? "المسؤولية الاجتماعية" : "Social Responsibility";
+      document.getElementById("card1Text").textContent = isEnglish ? "تعرف على كيفية دعم Intel للمجتمعات والتعليم." : "Learn how Intel supports communities and education.";
+      document.getElementById("card2Title").textContent = isEnglish ? "الابتكار التكنولوجي" : "Technology Innovation";
+      document.getElementById("card2Text").textContent = isEnglish ? "تعرف على أحدث ابتكارات Intel التي تدعم مستقبلاً أكثر استدامة." : "Learn about Intel’s latest innovations that support a more sustainable future.";
+      document.getElementById("card3Title").textContent = isEnglish ? "الاستدامة العالمية" : "Global Sustainability";
+      document.getElementById("card3Text").textContent = isEnglish ? "اكتشف جهود Intel لتحسين الكفاءة البيئية." : "Discover Intel’s efforts to improve environmental efficiency.";
+
+      document.getElementById("timelineTitle").textContent = isEnglish ? "الجدول الزمني" : "Timeline";
+
+      const timelineData = [
+        { year: "1968", ar: "تأسست Intel، بداية رحلة من الابتكار التي تحول التكنولوجيا.", en: "Intel is founded, beginning a journey of innovation that transforms technology." },
+        { year: "1971", ar: "تقدم Intel المعالج 4004 — أول معالج دقيق تجاري.", en: "Intel introduces the 4004 — the first commercial microprocessor." },
+        { year: "1978", ar: "إطلاق 8086 ليصبح أساس معمارية x86.", en: "The 8086 launches and becomes the foundation of the x86 architecture." },
+        { year: "1985", ar: "تقدم Intel المعالج 386، مما يجلب بنية 32 بت إلى أجهزة الكمبيوتر الشائعة.", en: "Intel introduces the 386, bringing 32-bit architecture to mainstream PCs." },
+        { year: "1993", ar: "يصل معالج Pentium، مما يوفر قفزة كبيرة في الأداء لأجهزة الكمبيوتر حول العالم.", en: "Pentium arrives, delivering a big leap in performance for PCs worldwide." },
+        { year: "2006", ar: "تطلق Intel معمارية Core الخاصة بها، مع التركيز على كفاءة الطاقة.", en: "Intel launches its Core microarchitecture, focusing on energy efficiency." },
+        { year: "2020", ar: "تعلن Intel عن معالم رئيسية للاستدامة، متعهدة باستخدام المياه الإيجابي والطاقة المتجددة بنسبة 100٪.", en: "Intel announces major sustainability milestones, committing to net positive water use and 100% renewable energy." }
+      ];
+
+      document.querySelectorAll(".timeline .card").forEach((card, index) => {
+        const p = card.querySelector("p");
+        p.textContent = isEnglish ? timelineData[index].ar : timelineData[index].en;
+        const btn = card.querySelector("a");
+        btn.textContent = isEnglish ? "تعرف على المزيد" : "Learn More";
+      });
     }
   </script>
 </body>
